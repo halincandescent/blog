@@ -3,5 +3,9 @@
 <h1>Home</h1>
 <p><%= paraHome %></p>
 
+<% for(var i=0; i < blogPosts.length; i++){ %>
+  <h3> <%= blogPosts[i].title %> </h3>
+  <p> <%= blogPosts[i].content %> </p>  
+<% } %> 
 
 <%- include("partials/footer") -%>
